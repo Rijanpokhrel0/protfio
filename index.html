@@ -3,90 +3,499 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rijan Pokhrel</title>
+  <meta name="description" content="Portfolio of Rijan Pokhrel - BCA Student, Full-Stack Developer & UI/UX Designer specializing in Java, JavaScript, PHP, MySQL, and Figma.">
+  <meta name="author" content="Rijan Pokhrel">
+  <title>Rijan Pokhrel | Full-Stack Developer & UI/UX Designer</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
-
-  <script
-    src="https://kit.fontawesome.com/45d6f44126.js"
-    crossorigin="anonymous">
-  </script>
 </head>
-
 <body>
 
-  <!-- Navbar -->
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-code">&lt;</span>Rijan<span class="logo-code">/&gt;</span>
+      </a>
 
-  <header class="navbar">
-    <nav class="nav-container">
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-briefcase"></i> Projects</a>
+        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
 
-      #
-
-      <div class="navlinks">
-        #Home</a>
-        #
-        #
+      <div class="nav-actions">
+        <a href="Rijan_Pokhrel_Resume.pdf" download="Rijan_Pokhrel_Resume.pdf" class="btn btn-outline nav-btn">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-
-      <button class="nav-btn">Ping Me</button>
-
-    </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span> Available for Opportunities
+          </div>
 
-  <section class="hero">
+          <p class="hero-eyebrow">👋 Namaste, I'm</p>
+          <h1 class="hero-title">Rijan Pokhrel</h1>
+          <h2 class="hero-subtitle">Full-Stack Developer & UI/UX Designer</h2>
 
-    <div class="hero-container">
+          <p class="hero-description">
+            BCA student at Universal College, Kathmandu. Passionate about building fast, accessible web applications, database management, and crafting intuitive user interfaces.
+          </p>
 
-      <div class="hero-left">
+          <div class="hero-tags">
+            <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="tag"><i class="fa-brands fa-php"></i> PHP</span>
+            <span class="tag"><i class="fa-solid fa-database"></i> MySQL</span>
+            <span class="tag"><i class="fa-brands fa-figma"></i> Figma</span>
+            <span class="tag"><i class="fa-brands fa-html5"></i> HTML5/CSS3</span>
+          </div>
 
-        <p class="eyebrow">👋 Namaste, I'm</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              View Work <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Me <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
 
-        <h1 class="hero-name">
-          Rijan Pokhrel
-        </h1>
-
-        <p class="hero-desc">
-          Aspiring Full-Stack Developer focused on building fast and beautiful web experiences.
-        </p>
-
-        <div class="skills">
-          <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">JavaScript</span>
+          <div class="hero-socials">
+            <a href="https://github.com/Rijanpokhrel0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/rijan-pokhrel-b7004b364" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:Rijanpokhrel3@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+9779808822114" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
         </div>
 
-        <div class="hero-buttons">
+        <div class="hero-visual">
+          <div class="avatar-glow"></div>
+          <div class="avatar-wrapper">
+            <img src="me.jpeg" alt="Rijan Pokhrel" class="avatar-img">
+            <div class="experience-badge">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <strong>BCA 4th Sem</strong>
+                <span>Universal College</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <button class="btn-primary">
-            View Work
-            <i class="fa-solid fa-arrow-down"></i>
-          </button>
-
-          <button class="btn-secondary">
-            Contact
-          </button>
-
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
         </div>
 
+        <div class="about-grid">
+          <div class="about-card glass">
+            <h3><i class="fa-solid fa-user-astronaut"></i> Professional Overview</h3>
+            <p>
+              I am a motivated and detail-oriented <strong>Bachelor of Computer Applications (BCA)</strong> student based in Kathmandu, Nepal. My core focus lies in full-stack web development and UI/UX design, combining logic-driven back-end systems with visually engaging front-end interfaces.
+            </p>
+            <p>
+              With strong skills in <strong>Java, JavaScript, PHP, MySQL</strong>, and user research methodologies in <strong>Figma</strong>, I enjoy solving real-world problems through clean code, structured database design, and user-centered design principles.
+            </p>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card glass">
+              <div class="stat-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+              <div class="stat-info">
+                <h4>4th Semester</h4>
+                <p>BCA Student</p>
+              </div>
+            </div>
+
+            <div class="stat-card glass">
+              <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="stat-info">
+                <h4>3.22 GPA</h4>
+                <p>+2 Computer Science</p>
+              </div>
+            </div>
+
+            <div class="stat-card glass">
+              <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="stat-info">
+                <h4>2 Core</h4>
+                <p>Featured Projects</p>
+              </div>
+            </div>
+
+            <div class="stat-card glass">
+              <div class="stat-icon"><i class="fa-solid fa-language"></i></div>
+              <div class="stat-info">
+                <h4>3 Languages</h4>
+                <p>Nepali, English, Hindi</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="hero-right">
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-line"></div>
+        </div>
 
-        <div class="glow"></div>
+        <!-- Filter Controls -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Programming</button>
+          <button class="filter-btn" data-filter="web">Web & UI/UX</button>
+          <button class="filter-btn" data-filter="concepts">Database & Concepts</button>
+          <button class="filter-btn" data-filter="tools">Tools & Soft Skills</button>
+        </div>
 
-        <img
-          src="me.jpeg"
-          alt="Profile"
-          class="portrait-img"
-        >
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-item glass" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="skill-details">
+              <h3>Java</h3>
+              <p>Object-Oriented Programming, Logic & Data Structures</p>
+            </div>
+          </div>
 
+          <div class="skill-item glass" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-details">
+              <h3>JavaScript</h3>
+              <p>ES6+, Dynamic Web Interfaces & DOM Manipulation</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass" data-category="languages">
+            <div class="skill-icon"><i class="fa-brands fa-php"></i></div>
+            <div class="skill-details">
+              <h3>PHP</h3>
+              <p>Server-side Scripting & Backend Logic Integration</p>
+            </div>
+          </div>
+
+          <!-- Web & UI/UX -->
+          <div class="skill-item glass" data-category="web">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-details">
+              <h3>HTML5 & CSS3</h3>
+              <p>Semantic Layouts, CSS Grid, Flexbox, Animations</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass" data-category="web">
+            <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="skill-details">
+              <h3>Responsive Web Design</h3>
+              <p>Mobile-first UI layouts, Cross-browser Compatibility</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass" data-category="web">
+            <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+            <div class="skill-details">
+              <h3>UI/UX & Prototyping</h3>
+              <p>Figma, User Research, Wireframes & Interactive Prototypes</p>
+            </div>
+          </div>
+
+          <!-- Database & Concepts -->
+          <div class="skill-item glass" data-category="concepts">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-details">
+              <h3>MySQL</h3>
+              <p>Relational Database Design, Queries & Integration</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass" data-category="concepts">
+            <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+            <div class="skill-details">
+              <h3>CRUD Operations & OOP</h3>
+              <p>Data Management, Object-Oriented Architecture</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass" data-category="concepts">
+            <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="skill-details">
+              <h3>Database Connectivity</h3>
+              <p>Connecting PHP / Java applications to relational databases</p>
+            </div>
+          </div>
+
+          <!-- Tools & Soft Skills -->
+          <div class="skill-item glass" data-category="tools">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="skill-details">
+              <h3>VS Code & Git/GitHub</h3>
+              <p>Code Editing, Version Control & Repository Management</p>
+            </div>
+          </div>
+
+          <div class="skill-item glass" data-category="tools">
+            <div class="skill-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="skill-details">
+              <h3>Soft Skills</h3>
+              <p>Problem Solving, Teamwork, Time Management, Continuous Learning</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio Highlights</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Gym Management System -->
+          <div class="project-card glass">
+            <div class="project-banner">
+              <div class="project-banner-content">
+                <i class="fa-solid fa-dumbbell project-icon"></i>
+                <span class="project-type-badge">Full-Stack Web App</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gym Management System</h3>
+              <span class="project-subtitle">College Capstone Project</span>
+              <p class="project-desc">
+                A complete web application engineered to streamline fitness center operations including member registration, membership tier management, trainer assignments, and record tracking.
+              </p>
+
+              <div class="project-bullets">
+                <p><i class="fa-solid fa-check-circle"></i> Implemented full CRUD operations for member & trainer management.</p>
+                <p><i class="fa-solid fa-check-circle"></i> Integrated MySQL relational database for efficient data storage.</p>
+                <p><i class="fa-solid fa-check-circle"></i> Designed a responsive user interface with intuitive UI/UX standards.</p>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Lost & Found Pets Mobile App -->
+          <div class="project-card glass">
+            <div class="project-banner pet-banner">
+              <div class="project-banner-content">
+                <i class="fa-solid fa-paw project-icon"></i>
+                <span class="project-type-badge">UI/UX Case Study & Prototype</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Lost and Found Pets App</h3>
+              <span class="project-subtitle">UI/UX Design Case Study</span>
+              <p class="project-desc">
+                An end-to-end mobile application case study created to help reunite lost pets with their owners using empathetic UX research and high-fidelity interactive prototyping.
+              </p>
+
+              <div class="project-bullets">
+                <p><i class="fa-solid fa-check-circle"></i> Conducted user research, surveys, and constructed user personas.</p>
+                <p><i class="fa-solid fa-check-circle"></i> Structured user journeys, information architecture, and low-to-high fidelity wireframes.</p>
+                <p><i class="fa-solid fa-check-circle"></i> Built an interactive Figma prototype with onboarding, reporting, and messaging.</p>
+              </div>
+
+              <div class="project-tech-stack">
+                <span>Figma</span>
+                <span>User Research</span>
+                <span>Wireframing</span>
+                <span>Prototyping</span>
+                <span>Usability Testing</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://www.figma.com/proto/Qr0MCa8J60AJ77gGnaADIl/Untitled" target="_blank" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-figma"></i> Live Figma Prototype
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Journey</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2024 – Present</span>
+              <h3 class="degree-title">Bachelor of Computer Applications (BCA)</h3>
+              <h4 class="institution">Universal College, Kathmandu</h4>
+              <p class="timeline-text">
+                Currently in <strong>4th Semester</strong>, specializing in software development, web applications, database systems, and object-oriented programming.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2023</span>
+              <h3 class="degree-title">10+2 | Computer Science</h3>
+              <h4 class="institution">Global School of Science, Kathmandu</h4>
+              <p class="timeline-text">
+                Completed Higher Secondary level education with a GPA of <strong>3.22</strong>, building strong foundations in Computer Science and Mathematics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card glass copyable" data-copy="Rijanpokhrel3@gmail.com">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Address</h4>
+                <p>Rijanpokhrel3@gmail.com</p>
+                <span class="copy-hint"><i class="fa-regular fa-copy"></i> Click to copy</span>
+              </div>
+            </div>
+
+            <div class="contact-card glass copyable" data-copy="9808822114">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Phone Number</h4>
+                <p>+977 9808822114</p>
+                <span class="copy-hint"><i class="fa-regular fa-copy"></i> Click to copy</span>
+              </div>
+            </div>
+
+            <div class="contact-card glass">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Location</h4>
+                <p>Kathmandu, Nepal</p>
+              </div>
+            </div>
+
+            <div class="social-links-card glass">
+              <h4>Connect On Socials</h4>
+              <div class="social-buttons">
+                <a href="https://linkedin.com/in/rijan-pokhrel-b7004b364" target="_blank" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Rijanpokhrel0" target="_blank" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container glass">
+            <h3>Send Me A Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="john@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required placeholder="Project Inquiry / Job Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required placeholder="Hi Rijan, I would like to discuss a project with you..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 <strong>Rijan Pokhrel</strong>. Built with passion & precision.</p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </div>
+  </footer>
 
-  </section>
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast"></div>
 
+  <!-- Custom Script -->
+  <script src="script.js"></script>
 </body>
 </html>
