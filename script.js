@@ -109,12 +109,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Helper Function: Show Toast Notification
+  // 6. Interactive Card Hover Effects handled via CSS transitions
+
+  // 7. Scroll Reveal Animation using IntersectionObserver
+  const revealElements = document.querySelectorAll('.glass, .section-header, .workflow-card, .timeline-item');
+  
+  revealElements.forEach(el => el.classList.add('reveal-on-scroll'));
+
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
+  // 8. Navbar Shadow & Blur on Scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      navbar.style.boxShadow = '0 10px 30px -10px rgba(15, 23, 42, 0.1)';
+      navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+    } else {
+      navbar.style.boxShadow = 'none';
+      navbar.style.background = 'rgba(255, 255, 255, 0.88)';
+    }
+  });
+
+  // 9. Helper Function: Show Toast Notification
   function showToast(message) {
     const toast = document.getElementById('toast');
     if (!toast) return;
 
-    toast.textContent = message;
+    toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 8px;"></i> ${message}`;
     toast.classList.add('show');
 
     setTimeout(() => {
@@ -123,3 +158,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
